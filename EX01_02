@@ -1,0 +1,65 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+void ex03()
+{
+
+}
+
+
+int main()
+{
+
+	system("cls");
+
+	double length;
+	double height;
+	char ans;
+	char ch;
+
+	cout << "Finding the hypotenuse of a triangle - " << endl;
+
+	cout << "Length: " << endl;
+	cin >> length;
+
+	cout << "Height: " << endl;
+	cin >> height;
+
+	double hypotenuse = (length * length) + (height * height);
+
+	cout << "The hypotenuse of the triangle is " << hypotenuse << endl;
+
+	cout << "Please answer the following question in a y or n format. " << endl;
+	cout << "Do you believe that Brandon Banks is the coolest person of all time? " << endl;
+	cin >> ans;
+
+	if (ans == 'y')
+	{
+		cout << "You chose yes, you are correct. " << endl;
+	}
+
+	else if (ans == 'n')
+	{
+		cout << "You chose no, you are super wrong. " << endl;
+	}
+
+	else
+	{
+		cout << "You inputted a wrong character, I'm disappointed in you... " << endl;
+	}
+
+	cout << "Enter a key you want the ASCII code for: " << endl;
+	cin >> ch;
+	cout << "The ASCII code for " << ch << " is: " << int(ch) << endl;
+
+	string mailingAddress;
+	cout << "What is your mailing address? " << endl;
+	cin >> mailingAddress;
+	getline(cin, mailingAddress);
+// If I put the getline there, then it will display multiple words but not the numbers.
+// If I don't put the getline there, it will only display the first numbers or word.
+	cout << "Your mailing address is " << mailingAddress << endl;
+
+	return 0;
+}
