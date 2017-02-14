@@ -1,0 +1,97 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+void ex02()
+{
+
+}
+
+int main()
+{
+
+	system("cls");
+
+	double x = rand() % 1000;
+	double y = rand() % 1000;
+	double numberOfShares = 0;
+	double box = 0;
+	double book = 0;
+
+	cout << "x = " << x << endl;
+	cout << "y = " << y << endl;
+
+	if (x > y)
+	{
+		cout << "x is greater than y " << endl;
+	}
+
+	else if (y > x)
+	{
+		cout << "x is less than y " << endl;
+	}
+
+	else
+	{
+		cout << "x is equal to y " << endl;
+	}
+
+	cout << "Input a value: " << endl;
+	cin >> numberOfShares;
+
+	if (numberOfShares < 100)
+	{
+		cout << numberOfShares << " is less than 100" << endl;
+	}
+
+	else if ( numberOfShares == 100)
+	{
+		cout << numberOfShares << " is equal to 100" << endl;
+	}
+
+	else
+	{
+		cout << numberOfShares << " is greater than 100" << endl;
+
+	}
+
+	cout << "Box Width: " << endl;
+	cin >> box;
+
+	cout << "Book Width: " << endl;
+	cin >> book;
+
+	char a = box;
+	char b = book;
+
+	if (a % b == 0)
+	{
+		cout << "The box is evenly divisible by the book " << endl;
+	}
+
+	else
+	{
+		cout << "The box isn't evenly divisible by the book " << endl;
+	}
+
+	double shelf = 0;
+	double temp = 0;
+
+	cout << "What is the shelf life of a box of chocolate? " << endl;
+	cin >> shelf;
+
+	cout << "What is the outside temperature? " << endl;
+	cin >> temp;
+
+	if (temp > 90)
+	{
+		cout << "The new shelf life of the chocolate is " << shelf - 4 << endl;
+	}
+
+	else
+	{
+		cout << "The shelf life of the chocolate is the same " << endl;
+	}
+
+	return 0;
+}
