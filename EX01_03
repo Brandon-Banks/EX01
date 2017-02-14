@@ -1,0 +1,60 @@
+#include <iostream>
+#include <cmath>
+#include <cstdlib>
+#include <string>
+
+using namespace std;
+
+void ex03()
+{
+	system("cls");
+
+	int x;
+	int a;
+
+	do
+	{
+		cout << "Input a value between 1 and 10: " << endl;
+		cin >> x;
+	} while (x < 1 || x > 10);
+	
+	for (int a = 2; a < 41; a = a + 2) 
+	{
+		cout << "Even numbers: " << a << endl;
+	}
+
+
+}
+
+void doubleint()
+{
+	double x;
+
+	cout << "What was your original number between 1 and 10? " << endl;
+	cin >> x;
+	// I don't know how to pull a number from a previous function.
+	int y = x * 2;
+
+	cout << "Twice the value of your original number is " << y << endl;
+}
+
+void random()
+{
+	int b = rand() % 1000;
+	int j = rand() % 1000;
+	double r = b + j;
+
+	cout << "The sum of the two random numbers is " << r << endl;
+
+
+}
+
+
+int main()
+{
+	ex03();
+	doubleint();
+	random();
+
+	return 0;
+}
